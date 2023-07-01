@@ -1,0 +1,182 @@
+.art-top-bg {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  background-position: center;
+  height: 400px;
+  background-size: cover;
+}
+.art-top-bg .art-top-bg-overlay {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(180deg, rgba(30, 30, 40, 0.93) 0%, rgba(30, 30, 40, 0.96) 70%, rgba(30, 30, 40, 0.99) 80%, rgb(30, 30, 40) 100%);
+}
+
+/* art banner */ 
+.art-banner-back {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: -30px;
+  width: 90%;
+  height: 30px;
+  margin-left: 5%;
+  box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background: rgba(30, 30, 40, 0.88);
+}
+
+.art-banner {
+  transition: 0.55s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+  z-index: 999;
+}
+.art-banner .art-banner-overlay {
+  position: relative;
+  display: flex;
+  padding: 60px;
+  width: 100%;
+  background-image: linear-gradient(90deg, rgba(45, 45, 58, 0.9) 15%, rgba(45, 45, 58, 0.7) 50%, rgba(43, 43, 53, 0.7) 100%);
+}
+.art-banner .art-banner-overlay.art-side-overlay {
+  background-image: linear-gradient(90deg, rgba(45, 45, 58, 0.9) 15%, rgba(45, 45, 58, 0.7) 50%, rgba(43, 43, 53, 0) 100%);
+}
+.art-banner .art-banner-overlay .art-banner-title {
+  width: 100%;
+  align-self: center;
+}
+.art-banner .art-banner-overlay .art-banner-title h1 {
+  color: rgb(250, 250, 252);
+}
+.art-banner .art-banner-overlay .art-banner-photo {
+  width: 390px;
+  position: absolute;
+  right: 30px;
+  bottom: 0;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+/*content (after 920px)
+
+------------------------------ */
+@media (max-width: 920px) {
+  .art-banner .art-banner-overlay {
+    padding: 60px 30px;
+  }
+  .art-banner .art-banner-overlay .art-banner-title {
+    text-align: center;
+  }
+  .art-banner .art-banner-overlay .art-banner-title h1 {
+    color: rgb(250, 250, 252);
+    font-size: 46px;
+  }
+  .art-banner .art-banner-overlay .art-banner-title .art-buttons-frame {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .art-banner .art-banner-overlay .art-banner-title .art-buttons-frame a {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  .art-banner .art-banner-overlay .art-banner-title .art-buttons-frame a:first-child {
+    margin-bottom: 15px;
+  }
+  .art-code {
+    min-height: 70px;
+    margin-bottom: 0;
+  }
+  .art-timeline .art-timeline-content {
+    margin-right: 30px;
+  }
+  .fancybox-container {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  .fancybox-toolbar {
+    width: 100vw;
+  }
+  .fancybox-navigation {
+    width: 100%;
+    position: absolute;
+    bottom: 35px;
+  }
+}
+/* ------------------------------
+
+content (after 768px)
+
+------------------------------ */
+@media (max-width: 768px) {
+  .art-section-title {
+    flex-direction: column;
+  }
+  .art-section-title .art-right-frame {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .art-grid.art-grid-2-col .art-grid-item {
+    width: 100%;
+  }
+  .art-grid.art-grid-3-col .art-grid-item {
+    width: 100%;
+  }
+  .art-filter {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .art-filter a {
+    margin: 0 0 10px;
+  }
+  .art-m-hidden {
+    display: none;
+  }
+}
+/* ------------------------------
+
+content (after 500px)
+
+------------------------------ */
+@media (max-width: 500px) {
+  .art-section-title {
+    flex-direction: column;
+  }
+  .art-section-title .art-right-frame {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .art-grid.art-grid-2-col .art-grid-item {
+    width: 100%;
+  }
+  .art-grid.art-grid-3-col .art-grid-item {
+    width: 100%;
+  }
+}
+
+/* ----- container ----- */
+.container-fluid {
+  overflow: hidden;
+  padding: 0 30px;
+  position: relative;
+}
+
+/* ----- buttons frame ----- */
+.art-buttons-frame a {
+  margin-right: 15px;
+}
